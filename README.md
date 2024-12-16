@@ -1,4 +1,3 @@
-```markdown
 # Netflix Clone with AI-Powered Recommendations
 
 ## 📌 Overview
@@ -79,7 +78,6 @@ Follow these steps to set up the project locally.
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/netflix-clone-ai.git
-   ```
 2. Navigate to the project directory:
    ```bash
    cd netflix-clone-ai
@@ -91,7 +89,6 @@ Follow these steps to set up the project locally.
    cd ../backend
    npm install
    ```
-
 4. Install Python dependencies for the AI system:
    ```bash
    pip install -r requirements.txt
