@@ -1,3 +1,4 @@
+```markdown
 # Netflix Clone with AI-Powered Recommendations
 
 ## 📌 Overview
@@ -43,7 +44,27 @@ This project is a **Netflix Clone** designed to replicate the core functionaliti
 - AWS/Heroku for deployment
 
 ## 📂 Project Structure
-
+```
+netflix-clone-ai/
+│
+├── frontend/              # React.js application
+│   ├── public/            # Static assets
+│   ├── src/               # Source files
+│       ├── components/    # UI components
+│       ├── pages/         # Main pages
+│       ├── utils/         # Helper functions
+│
+├── backend/               # Node.js server
+│   ├── models/            # Database schemas
+│   ├── routes/            # API endpoints
+│   ├── controllers/       # Business logic
+│
+├── recommendation-system/ # AI recommendation engine
+│   ├── recommendation.py  # Main ML model script
+│
+├── docker-compose.yml     # Docker setup
+└── README.md              # Project documentation
+```
 
 ## 🚀 Getting Started
 Follow these steps to set up the project locally.
@@ -58,3 +79,58 @@ Follow these steps to set up the project locally.
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/netflix-clone-ai.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd netflix-clone-ai
+   ```
+3. Install dependencies for the frontend and backend:
+   ```bash
+   cd frontend
+   npm install
+   cd ../backend
+   npm install
+   ```
+
+4. Install Python dependencies for the AI system:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Running the Project
+1. Start the frontend:
+   ```bash
+   cd frontend
+   npm start
+   ```
+2. Start the backend:
+   ```bash
+   cd backend
+   npm start
+   ```
+3. Run the recommendation system:
+   ```bash
+   python recommendation-system/recommendation.py
+   ```
+
+4. Access the application at `http://localhost:3000`.
+
+### Deployment
+Use the provided `docker-compose.yml` file to deploy the project in a containerized environment.
+
+## 📊 How It Works
+1. **Frontend**: React.js fetches user data and movie details from the backend and displays them in a Netflix-like interface.
+2. **Backend**: Node.js handles API requests, user authentication, and database interactions.
+3. **AI Recommendation System**: Python-based scripts analyze user behavior and movie metadata to provide personalized suggestions.
+
+## 📚 Learning Resources
+- **React.js**: [React Docs](https://reactjs.org/docs/getting-started.html)
+- **Node.js + Express**: [Express Docs](https://expressjs.com/)
+- **MongoDB**: [MongoDB Docs](https://www.mongodb.com/docs/)
+- **Machine Learning**: [Scikit-Learn Tutorials](https://scikit-learn.org/stable/tutorial/index.html)
+
+## 🤝 Contributing
+Contributions are welcome! Please fork the repository and create a pull request for any changes or improvements.
+
+## 📜 License
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
